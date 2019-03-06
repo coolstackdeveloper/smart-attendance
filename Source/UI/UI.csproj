@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ADE1CA1E-C9F3-458B-A4F9-170B0D4853D4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DeployIisAppPath>Default Web Site/Testing</DeployIisAppPath>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DeployIisAppPath>Default Web Site/SmartAttendance</DeployIisAppPath>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <DesktopBuildPackageLocation>obj\Release\SmartAttendance.zip</DesktopBuildPackageLocation>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\..\..\SupportFiles\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AttendanceEntries.aspx" />
+    <Content Include="AttendanceExceptionTypeSetup.aspx" />
+    <Content Include="BranchSetup.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="CompanySetup.aspx" />
+    <Content Include="DepartmentSetup.aspx" />
+    <Content Include="DesignationSetup.aspx" />
+    <Content Include="DeviceSetup.aspx" />
+    <Content Include="EmployeeSetup.aspx" />
+    <Content Include="EmployeeShiftAssignment.aspx" />
+    <Content Include="EmployeeTypeSetup.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HolidaySetup.aspx" />
+    <Content Include="Images\branch.png" />
+    <Content Include="Images\company_logo.jpg" />
+    <Content Include="Images\company_logo.png" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\headquater.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="ProfileFieldSetup.aspx" />
+    <Content Include="RoleSetup.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="ShiftExceptionSetup.aspx" />
+    <Content Include="ShiftExceptionTypeSetup.aspx" />
+    <Content Include="ShiftSetup.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\VersionInfo.cs">
+      <Link>VersionInfo.cs</Link>
+    </Compile>
+    <Compile Include="AttendanceEntries.aspx.cs">
+      <DependentUpon>AttendanceEntries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttendanceEntries.aspx.designer.cs">
+      <DependentUpon>AttendanceEntries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceExceptionTypeSetup.aspx.cs">
+      <DependentUpon>AttendanceExceptionTypeSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttendanceExceptionTypeSetup.aspx.designer.cs">
+      <DependentUpon>AttendanceExceptionTypeSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BranchSetup.aspx.cs">
+      <DependentUpon>BranchSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BranchSetup.aspx.designer.cs">
+      <DependentUpon>BranchSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanySetup.aspx.cs">
+      <DependentUpon>CompanySetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanySetup.aspx.designer.cs">
+      <DependentUpon>CompanySetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentSetup.aspx.cs">
+      <DependentUpon>DepartmentSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DepartmentSetup.aspx.designer.cs">
+      <DependentUpon>DepartmentSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DesignationSetup.aspx.cs">
+      <DependentUpon>DesignationSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesignationSetup.aspx.designer.cs">
+      <DependentUpon>DesignationSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceSetup.aspx.cs">
+      <DependentUpon>DeviceSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeviceSetup.aspx.designer.cs">
+      <DependentUpon>DeviceSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeSetup.aspx.cs">
+      <DependentUpon>EmployeeSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeSetup.aspx.designer.cs">
+      <DependentUpon>EmployeeSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeShiftAssignment.aspx.cs">
+      <DependentUpon>EmployeeShiftAssignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeShiftAssignment.aspx.designer.cs">
+      <DependentUpon>EmployeeShiftAssignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTypeSetup.aspx.cs">
+      <DependentUpon>EmployeeTypeSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeTypeSetup.aspx.designer.cs">
+      <DependentUpon>EmployeeTypeSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HolidaySetup.aspx.cs">
+      <DependentUpon>HolidaySetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HolidaySetup.aspx.designer.cs">
+      <DependentUpon>HolidaySetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileFieldSetup.aspx.cs">
+      <DependentUpon>ProfileFieldSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProfileFieldSetup.aspx.designer.cs">
+      <DependentUpon>ProfileFieldSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RoleSetup.aspx.cs">
+      <DependentUpon>RoleSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RoleSetup.aspx.designer.cs">
+      <DependentUpon>RoleSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShiftExceptionSetup.aspx.cs">
+      <DependentUpon>ShiftExceptionSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShiftExceptionSetup.aspx.designer.cs">
+      <DependentUpon>ShiftExceptionSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShiftExceptionTypeSetup.aspx.cs">
+      <DependentUpon>ShiftExceptionTypeSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShiftExceptionTypeSetup.aspx.designer.cs">
+      <DependentUpon>ShiftExceptionTypeSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShiftSetup.aspx.cs">
+      <DependentUpon>ShiftSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShiftSetup.aspx.designer.cs">
+      <DependentUpon>ShiftSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoreLib\CoreLib.csproj">
+      <Project>{9BE6D69C-5DBE-4E32-B54D-6938F9777F02}</Project>
+      <Name>CoreLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{34E97631-51AE-463B-8DB6-69BE9C60B2B3}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{86DABEF9-2A44-4D5E-9309-BA8CB387CAC4}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>22886</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

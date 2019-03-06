@@ -1,0 +1,81 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CoreLib" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">First Name</Value>
+    </Setting>
+    <Setting Name="MName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Middle Name</Value>
+    </Setting>
+    <Setting Name="LName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Last Name</Value>
+    </Setting>
+    <Setting Name="Nationality" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Nationality</Value>
+    </Setting>
+    <Setting Name="Religion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Religion</Value>
+    </Setting>
+    <Setting Name="Country" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Country</Value>
+    </Setting>
+    <Setting Name="State" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">State</Value>
+    </Setting>
+    <Setting Name="PinCode" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Pin Code</Value>
+    </Setting>
+    <Setting Name="ZipCode" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Zip Code</Value>
+    </Setting>
+    <Setting Name="MobileNumber" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Mobile Number</Value>
+    </Setting>
+    <Setting Name="ResidenceNumber" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Residence Number</Value>
+    </Setting>
+    <Setting Name="OfficeNumber" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Office Number</Value>
+    </Setting>
+    <Setting Name="StreetNumber" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Street Number</Value>
+    </Setting>
+    <Setting Name="StreetName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Street Name</Value>
+    </Setting>
+    <Setting Name="City" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">City</Value>
+    </Setting>
+    <Setting Name="Region" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Region</Value>
+    </Setting>
+    <Setting Name="Name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Name</Value>
+    </Setting>
+    <Setting Name="AddressLine1" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Address Line 1</Value>
+    </Setting>
+    <Setting Name="AddressLine2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Address Line 2</Value>
+    </Setting>
+    <Setting Name="AddressLine3" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Address Line 3</Value>
+    </Setting>
+    <Setting Name="AddressLine4" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Address Line 4</Value>
+    </Setting>
+    <Setting Name="Address" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Address</Value>
+    </Setting>
+    <Setting Name="Website" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Website</Value>
+    </Setting>
+    <Setting Name="Email" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Email</Value>
+    </Setting>
+    <Setting Name="Setting" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

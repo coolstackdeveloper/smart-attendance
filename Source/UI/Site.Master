@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="UI.Site" %>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0)">
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0)">
+    <meta id="m_mtaRefresh" runat="server" />
+    <title>Time & Attendance Management System</title>
+    <link runat="server" rel="Shortcut Icon" href="" />
+    <script src="Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="m_head" runat="server">
+    </asp:ContentPlaceHolder>
+    </head>
+    <body style="margin:0px; min-height:200px; min-width:900px;">
+        <form id="m_frmMaster" 
+              runat="server" >
+            <telerik:RadScriptManager EnablePartialRendering="true" Runat="server" />
+            <telerik:RadFormDecorator ID="FormDecorator1" 
+                                      runat="server" 
+                                      DecoratedControls="all"></telerik:RadFormDecorator>
+            <div style="overflow:auto;">
+                <!--
+                    <img alt="" src="Images/company_logo.jpg" height="60px" style="vertical-align:text-bottom" />
+                    <span style="font-size:x-large;font-family:Comic Sans MS">Test System</span>
+                -->
+                <img alt="" src="Images/company_logo.png" height="60px" style="vertical-align:text-bottom" />
+                <span style="font-size:x-large;font-family:Comic Sans MS">Time & Attendance Management System</span>
+                <telerik:RadSkinManager ID="RadSkinManager1" 
+                    runat="server" Enabled="true"
+                    ShowChooser="false" Skin="Hay" >
+                    <TargetControls>
+                        <telerik:TargetControl ControlID="m_frmMaster" Enabled="true" />
+                    </TargetControls>
+                </telerik:RadSkinManager>
+            </div>
+            <div>
+                <div>
+                    <telerik:RadSplitter ID="RadSplitter1" runat="server"
+                                             ResizeWithBrowserWindow="true" 
+                                             ResizeWithParentPane="false"
+                                            Width="100%" Height="800px"
+                                            Orientation="Vertical">
+                        <telerik:RadPane ID="RadPane1" runat="server" 
+                                         style="padding-bottom:2px"
+                                         Height="100%"  Width="15%">
+                            <telerik:RadPanelBar ID="m_pnlBar"
+                                     style="padding-top:1px"
+                                     ExpandMode="MultipleExpandedItems"
+                                     runat="server" Width="100%" OnItemClick="m_pnlBar_ItemClick">
+                                <Items>
+                                    <telerik:RadPanelItem runat="server" Text="Organization" PreventCollapse="true" PostBack="false" 
+                                            Expanded="true">
+                                        <Items>
+                                            <telerik:RadPanelItem runat="server" Text="Companies" Value="CompanySetup.aspx" />
+                                            <telerik:RadPanelItem runat="server" Text="Branches" Value="BranchSetup.aspx" />
+                                            <telerik:RadPanelItem runat="server" Text="Holidays" Value="HolidaySetup.aspx" />    
+                                            <telerik:RadPanelItem runat="server" Text="Departments" Value="DepartmentSetup.aspx" />
+                                            <telerik:RadPanelItem runat="server" Text="Designations" Value="DesignationSetup.aspx" />
+                                        </Items>
+                                    </telerik:RadPanelItem>
+                                    <telerik:RadPanelItem runat="server" Text="Shifts" PreventCollapse="true" PostBack="false" Expanded="true">
+                                        <Items>
+                                            <telerik:RadPanelItem runat="server" Text="Shifts" Value="ShiftSetup.aspx" />
+                                            <telerik:RadPanelItem runat="server" Text="Shift Exceptions" Value="ShiftExceptionSetup.aspx" />
+                                            <telerik:RadPanelItem runat="server" Text="Shift Exception Types" Value="ShiftExceptionTypeSetup.aspx" />
+                                        </Items>
+                                    </telerik:RadPanelItem>
+                                    <telerik:RadPanelItem runat="server" Text="Employees" PostBack="false" PreventCollapse="true" Expanded="true">
+                                        <Items>
+                                            <telerik:RadPanelItem runat="server" Text="Employees" Value="EmployeeSetup.aspx" />
+                                            <telerik:RadPanelItem runat="server" Text="Employee Types" Value="EmployeeTypeSetup.aspx" />
+                                            <telerik:RadPanelItem runat="server" Text="Entries" Value="AttendanceEntries.aspx" />
+                                            <telerik:RadPanelItem runat="server" Text="Entry Types" Value="AttendanceExceptionTypeSetup.aspx" />
+                                            <telerik:RadPanelItem runat="server" Text="Employee Shift Assignments" Value="EmployeeShiftAssignment.aspx" />
+                                        </Items>
+                                    </telerik:RadPanelItem>
+                                    <telerik:RadPanelItem runat="server" Text="System" PreventCollapse="true" PostBack="false" Expanded="true">
+                                        <Items>
+                                            <telerik:RadPanelItem runat="server" Text="Roles" Value="RoleSetup.aspx" />
+                                            <telerik:RadPanelItem runat="server" Text="Devices" Value="DeviceSetup.aspx" />
+                                            <telerik:RadPanelItem runat="server" Text="Contact Fields" Value="ProfileFieldSetup.aspx" />
+                                        </Items>
+                                    </telerik:RadPanelItem>
+                                    <telerik:RadPanelItem runat="server" 
+                                                          ID="m_pnlItemCredentials"
+                                                          Text="Credentials" PreventCollapse="true" PostBack="false" Expanded="true">
+                                        <Items>
+                                            <telerik:RadPanelItem runat="server" ID="m_pnlItemChangePassword" Text="Change Password" Value="ChangePassword.aspx" />
+                                            <telerik:RadPanelItem runat="server" ID="m_pnlItemLogonUser" Text="Log Out" Value="Logout.aspx" Font-Bold="true"/>
+                                        </Items>
+                                    </telerik:RadPanelItem>
+                                </Items>
+                            </telerik:RadPanelBar>
+                        </telerik:RadPane>
+                        <telerik:RadSplitBar ID="RadSplitBar1"
+                                            AdjacentPanesNames-LeftPaneName="RadPane1"
+                                            AdjacentPanesNames-RightPaneName="RadPane2"
+                                            CollapseExpandPaneText="Options"
+                                            runat="server"></telerik:RadSplitBar>
+                        <telerik:RadPane ID="RadPane2" 
+                                        runat="server" Width="85%" Height="100%">
+                            <div style="padding-left:2px;padding-top:3px">
+                                <asp:ContentPlaceHolder ID="m_cpChild" runat="server"/>
+                            </div>
+                        </telerik:RadPane>
+                    </telerik:RadSplitter>
+                </div>
+                <div style="clear:both">
+                    <asp:Label ID="m_lblError" runat="server" Font-Bold="true" ForeColor="red" Visible="false" />
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

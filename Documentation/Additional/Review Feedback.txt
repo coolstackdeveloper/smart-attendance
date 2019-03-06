@@ -1,0 +1,18 @@
+1) Reflect the main company holiday as a part of branch holiday.
+3) eMP E123456 (7 DIGIT)
+4) emp CODE -  SHORT EMP CODE - DEVICE
+10) 15 mins for prayer timing. Configurable. Take islamic calendar.
+11) Shift/Attenbdance policies.
+13) Use arabic calendar.
+
+daily,weekly,monthly reports
+
+14) Basic dashboard initiALLY.
+all the necessary items for the login role to be displayed.
+12) Move the shift assignmewnt to another page for better manageability. One employee should be allowed to work in multiple shifts. Default shift assignment.
+2) Company branch hierarchy for multiple holdings - DONE
+5) NATIONALITY, RELIGION - DONE
+6) add ip address, subnet mask, gateway information.- DONE
+7) add mac address of the device - DONE
+8) make remark wider...DONE
+9) nULL WEEKDAY HANDLING IN SHIFT exception page. - DONE
